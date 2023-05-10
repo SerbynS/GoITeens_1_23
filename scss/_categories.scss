@@ -1,0 +1,29 @@
+.categories {
+   h3 {
+      text-align: center;
+      padding-top: 50px;
+      @include textStyle(700, 18px, 22px);
+   }
+
+   ul {
+      width: 166px;
+      height: 918px;
+      margin: 40px auto 0;
+      @include flexCenter();
+      flex-direction: column;
+      gap: 30px;
+
+      li {
+         width: 166px;
+         height: 128px;
+         background: #f2f3f6;
+         border-radius: 10px;
+         @include flexCenter();
+         flex-direction: column;
+
+         i {
+            margin-bottom: 15px;
+         }
+      }
+   }
+}
