@@ -1,10 +1,15 @@
 .jobs {
    padding-top: 50px;
 
+   & * {
+      box-sizing: border-box;
+   }
+
    & > h3 {
       text-align: center;
       @include textStyle(700, 18px, 22px);
       color: #111238;
+      padding-bottom: 40px;
    }
 
    .vacancies-cards {
@@ -53,6 +58,49 @@
             @include textStyle(700, 16px, 19px);
             margin-bottom: 30px;
          }
+
+         .stack {
+            @include textStyle(400, 14px, 17px);
+            color: #b2b2b2;
+            width: 183px;
+            height: 59px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            ul {
+               display: flex;
+               justify-content: space-between;
+               width: 100%;
+
+               li {
+                  border: 1px solid #b2b2b2;
+                  border-radius: 5px;
+                  padding: 5px 10px;
+               }
+            }
+         }
+
+         a {
+            text-decoration: none;
+            color: #1a75e8;
+            @include textStyle(400, 14px, 17px);
+         }
       }
    }
+
+   & > button {
+      padding: 15px 30px;
+      background: #1a75e8;
+      border-radius: 5px;
+      color: #ffffff;
+      @include textStyle(400, 16px, 19px);
+      border: none;
+      display: block;
+      margin: 30px auto 0;
+   }
+
+   padding-bottom: 50px;
 }

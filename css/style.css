@@ -264,6 +264,10 @@ header .hero .hero-text .example p {
 
 .jobs {
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+.jobs * {
+  box-sizing: border-box;
 }
 .jobs > h3 {
   text-align: center;
@@ -273,6 +277,7 @@ header .hero .hero-text .example p {
   font-size: 18px;
   line-height: 22px;
   color: #111238;
+  padding-bottom: 40px;
 }
 .jobs .vacancies-cards {
   width: 290px;
@@ -326,4 +331,52 @@ header .hero .hero-text .example p {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 30px;
+}
+.jobs .vacancies-cards .card .stack {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b2b2b2;
+  width: 183px;
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.jobs .vacancies-cards .card .stack ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.jobs .vacancies-cards .card .stack ul li {
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.jobs .vacancies-cards .card a {
+  text-decoration: none;
+  color: #1a75e8;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.jobs > button {
+  padding: 15px 30px;
+  background: #1a75e8;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  display: block;
+  margin: 30px auto 0;
 }
