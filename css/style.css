@@ -391,6 +391,18 @@ header .hero .hero-text .example p {
 }
 
 @media (min-width: 992px) {
+  header .hero {
+    flex-direction: row;
+    width: 1132px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  header .hero img {
+    width: 544px;
+    height: 557px;
+  }
+}
+@media (min-width: 992px) {
   .categories ul {
     width: 1146px;
     height: 128px;
@@ -409,6 +421,13 @@ header .hero .hero-text .example p {
   }
 }
 @media (min-width: 992px) {
+  .jobs > h3 {
+    width: 1146px;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 29px;
+  }
   .jobs .vacancies-cards {
     width: 1146px;
     height: 700px;
@@ -417,8 +436,31 @@ header .hero .hero-text .example p {
     width: 1146px;
     height: 160px;
     flex-direction: row;
+    padding-left: 30px;
+    padding-right: 55px;
   }
   .jobs .vacancies-cards .card > * {
-    margin-bottom: 10px;
+    margin-bottom: 0 !important;
+  }
+  .jobs .vacancies-cards .card img {
+    margin-right: 20px;
+  }
+  .jobs .vacancies-cards .card .title {
+    margin-right: 46px;
+    text-align: left;
+  }
+  .jobs .vacancies-cards .card button {
+    margin-right: 62px;
+  }
+  .jobs .vacancies-cards .card .stack {
+    flex-direction: row;
+    width: 250px;
+    height: 27px;
+  }
+  .jobs .vacancies-cards .card .stack ul {
+    width: 183px;
+  }
+  .jobs .vacancies-cards .card a {
+    margin-left: 208px;
   }
 }

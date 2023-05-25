@@ -1,5 +1,13 @@
 @media (min-width: 992px) {
    .jobs {
+      & > h3 {
+         width: 1146px;
+         text-align: left;
+         margin: 0 auto;
+         font-size: 24px;
+         line-height: 29px;
+      }
+
       .vacancies-cards {
          width: 1146px;
          height: 700px;
@@ -8,9 +16,38 @@
             width: 1146px;
             height: 160px;
             flex-direction: row;
+            padding-left: 30px;
+            padding-right: 55px;
 
             & > * {
-               margin-bottom: 10px;
+               margin-bottom: 0 !important;
+            }
+
+            img {
+               margin-right: 20px;
+            }
+
+            .title {
+               margin-right: 46px;
+               text-align: left;
+            }
+
+            button {
+               margin-right: 62px;
+            }
+
+            .stack {
+               flex-direction: row;
+               width: 250px;
+               height: 27px;
+
+               ul {
+                  width: 183px;
+               }
+            }
+
+            a {
+               margin-left: 208px;
             }
          }
       }
