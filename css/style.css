@@ -133,6 +133,9 @@ table {
   border-spacing: 0;
 }
 
+.categories {
+  padding-bottom: 50px;
+}
 .categories h3 {
   text-align: center;
   padding-top: 50px;
@@ -161,6 +164,12 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.categories ul li:hover {
+  background: #1a75e8;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
 }
 .categories ul li i {
   margin-bottom: 15px;
@@ -379,4 +388,37 @@ header .hero .hero-text .example p {
   border: none;
   display: block;
   margin: 30px auto 0;
+}
+
+@media (min-width: 992px) {
+  .categories ul {
+    width: 1146px;
+    height: 128px;
+    flex-direction: row;
+  }
+  .categories {
+    padding-bottom: 80px;
+  }
+  .categories h3 {
+    text-align: left;
+    width: 1146px;
+    margin: 0 auto;
+    padding-top: 70px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+@media (min-width: 992px) {
+  .jobs .vacancies-cards {
+    width: 1146px;
+    height: 700px;
+  }
+  .jobs .vacancies-cards .card {
+    width: 1146px;
+    height: 160px;
+    flex-direction: row;
+  }
+  .jobs .vacancies-cards .card > * {
+    margin-bottom: 10px;
+  }
 }
