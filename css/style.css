@@ -271,6 +271,11 @@ header .hero .hero-text .example p {
   padding-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+  button p {
+    display: none;
+  }
+}
 .jobs {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -400,6 +405,61 @@ header .hero .hero-text .example p {
   header .hero img {
     width: 544px;
     height: 557px;
+  }
+  header .hero .hero-text {
+    width: 460px;
+    height: 348px;
+    align-items: start;
+  }
+  header .hero .hero-text h2 {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  header .hero .hero-text > p {
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    width: 100%;
+    text-align: left;
+  }
+  header .hero .hero-text form {
+    width: 447px;
+    margin-bottom: 0;
+  }
+  header .hero .hero-text form button {
+    width: 211px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  header .hero .hero-text form button p {
+    padding-left: 10px;
+  }
+  header .hero .hero-text .example {
+    margin-top: 25px;
+    height: 27px;
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    width: 335px;
+    justify-content: space-between;
+  }
+  header .hero .hero-text .example p {
+    padding-bottom: 0;
+  }
+  header .hero .hero-text .example ul {
+    width: 259px;
   }
 }
 @media (min-width: 992px) {

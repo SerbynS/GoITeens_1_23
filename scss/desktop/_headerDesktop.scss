@@ -10,6 +10,61 @@
             width: 544px;
             height: 557px;
          }
+
+         .hero-text {
+            width: 460px;
+            height: 348px;
+            align-items: start;
+
+            h2 {
+               @include textStyle(900, 44px, 53px);
+               width: 100%;
+               text-align: left;
+               padding-bottom: 15px;
+            }
+            & > p {
+               @include textStyle(400, 18px, 25px);
+               width: 100%;
+               text-align: left;
+            }
+
+            form {
+               width: 447px;
+               margin-bottom: 0;
+               button {
+                  width: 211px;
+                  height: 49px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 30px;
+                  padding-right: 30px;
+
+                  p {
+                     padding-left: 10px;
+                  }
+               }
+            }
+
+            .example {
+               margin-top: 25px;
+               height: 27px;
+
+               margin-left: 10px;
+               display: flex;
+               margin-bottom: 0;
+               align-items: center;
+               width: 335px;
+               justify-content: space-between;
+
+               p {
+                  padding-bottom: 0;
+               }
+
+               ul {
+                  width: 259px;
+               }
+            }
+         }
       }
    }
 }
