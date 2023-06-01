@@ -281,14 +281,20 @@ header {
 }
 header menu {
   margin: 0 15px 44px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header menu img {
+  width: 90px;
+}
+header menu a {
+  height: 20.54px;
 }
 header menu * {
   box-sizing: border-box;
 }
-header menu nav ul {
-  display: none;
-}
-header menu nav .join-block {
+header menu nav .menu {
   display: none;
 }
 header menu nav label {
@@ -300,7 +306,53 @@ header menu nav label {
 header menu nav label:hover {
   cursor: pointer;
 }
+header menu nav label span {
+  top: 8px;
+}
+header menu nav label span,
+header menu nav label span::before,
+header menu nav label span::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #111238;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+}
+header menu nav label span::before {
+  top: -4px;
+}
+header menu nav label span::after {
+  top: 4px;
+}
+header menu nav input[type=checkbox]:checked ~ label span {
+  transform: rotate(-45deg);
+}
+header menu nav input[type=checkbox]:checked ~ label span:before {
+  transform: rotate(0deg);
+  top: 0px;
+}
+header menu nav input[type=checkbox]:checked ~ label span:after {
+  transform: rotate(90deg);
+  top: 0px;
+}
+header menu nav input {
+  display: none;
+}
 
+@media (max-width: 768px) {
+  header input[type=checkbox]:checked ~ .menu {
+    display: flex;
+  }
+  header .menu {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    box-shadow: 0 12px 8px #a5a4a4;
+  }
+}
 .jobs {
   padding-top: 50px;
   padding-bottom: 50px;
