@@ -276,6 +276,31 @@ header .hero .hero-text .example p {
     display: none;
   }
 }
+header {
+  padding-top: 29px;
+}
+header menu {
+  margin: 0 15px 44px 22px;
+}
+header menu * {
+  box-sizing: border-box;
+}
+header menu nav ul {
+  display: none;
+}
+header menu nav .join-block {
+  display: none;
+}
+header menu nav label {
+  display: block;
+  width: 24px;
+  height: 16px;
+  position: relative;
+}
+header menu nav label:hover {
+  cursor: pointer;
+}
+
 .jobs {
   padding-top: 50px;
   padding-bottom: 50px;
