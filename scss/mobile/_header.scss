@@ -99,3 +99,34 @@ header {
       }
    }
 }
+
+header {
+   padding-top: 29px;
+   menu {
+      margin: 0 15px 44px 22px;
+      * {
+         box-sizing: border-box;
+      }
+
+      nav {
+         ul {
+            display: none;
+         }
+
+         .join-block {
+            display: none;
+         }
+
+         label {
+            display: block;
+            width: 24px;
+            height: 16px;
+            position: relative;
+         }
+
+         label:hover {
+            cursor: pointer;
+         }
+      }
+   }
+}
