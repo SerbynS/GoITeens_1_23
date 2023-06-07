@@ -540,6 +540,67 @@ header menu nav input {
   }
 }
 @media (min-width: 992px) {
+  header menu {
+    width: 1145px;
+    height: 49px;
+    margin: 0 auto 75px;
+  }
+  header menu a {
+    height: 30px;
+    width: 131px;
+  }
+  header menu a img {
+    height: 100%;
+    width: 100%;
+  }
+  header menu nav label {
+    display: none;
+  }
+  header menu nav .menu {
+    display: flex;
+    width: 752px;
+    justify-content: space-between;
+  }
+  header menu nav .menu ul {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  header menu nav .menu .join-block {
+    width: 241px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header menu nav .menu .join-block button:nth-of-type(1) {
+    border: none;
+    background: none;
+    outline: none;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  header menu nav .menu .join-block button:nth-of-type(2) {
+    border: none;
+    background: #1a75e8;
+    border-radius: 5px;
+    font-family: "Fira Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding: 15px 30px;
+  }
+}
+@media (min-width: 992px) {
   .categories ul {
     width: 1146px;
     height: 128px;
